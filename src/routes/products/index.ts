@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { listProducts, getProductById, createProduct, updateProduct, deleteProduct } from "./productsController";
-import { validateData } from "../../middleware/validationMiddleware";
+import { listProducts, getProductById, createProduct, updateProduct, deleteProduct } from "./productsController.js";
+import { validateData } from "../../middleware/validationMiddleware.js";
 import { createInsertSchema } from 'drizzle-zod';
-import { createProductSchema, updateProductSchema } from "../../db/productSchema";
-import { verifySeller, verifyToken } from "../../middleware/authMiddleware";
+import { createProductSchema, updateProductSchema } from "../../db/productSchema.js";
+import { verifySeller, verifyToken } from "../../middleware/authMiddleware.js";
 
 
 const router = Router();
